@@ -50,10 +50,10 @@ Make sure that the path to the GRASS7 folder is set, by going in the menu under 
 
 Go into the Terminal and execute the command “gdalinfo”, it the answer is “command not found” execute these two commands so set the path. Make sure to name the right QGis version. 
 
-  export PROJ_LIB="/Applications/QGIS-LTR.app/Contents/Resources/proj" 
-
-  export PATH=/Applications/QGIS-LTR.app/Contents/MacOS/bin:$PATH 
-
+```shell
+export PROJ_LIB="/Applications/QGIS-LTR.app/Contents/Resources/proj" 
+export PATH=/Applications/QGIS-LTR.app/Contents/MacOS/bin:$PATH 
+```
  
 
 **Linux:** 
