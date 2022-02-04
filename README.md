@@ -123,7 +123,7 @@ e.     Run fifth script (Result.sh in the normal Commandline)
 
 ## Help 
 
-Common errors: Specify file paths correctly, … 
+Until now, we couldn't detec common errors. If you have problems, do not hesitate to write an issue. We will answer as soon as possible. If common errors come up, we will write them down here. 
 
   
 
