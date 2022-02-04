@@ -3,7 +3,7 @@
 This project tries to model the distribution of Urban Heat Islands in Heidelberg, Germany via gdal and GRASS GIS. 
 
 
-*Description* 
+## Description
 
 This repository contains the calculation of Urban Heat Islands on the exmaple of Heidelberg in Germany.
 
@@ -16,11 +16,11 @@ Following the article of Dugord et al., who made a potential heat stress risk an
 Until today we only implemented three aspects: The Land Surface Temperature, the Land Cover and the building density. Nevertheless we already faced some challenges, f.e. in calculating the centerpoints of the buildings with GRASS Gis. In the near future we want to ad the other aspects, which are listed above. Latest on the 31.03.2022 the complete calculation will be published here.
 
   
-*Getting Started* 
+## Getting Started
 
-Installing: 
+### Installing 
 
-Windows: 
+**Windows:** 
 
 Download the OSGeo4W Installer from here and run the installer (choose advanced intall and keep the default values) 
 
@@ -42,7 +42,7 @@ Complete the intallation
 
  
 
-MacOS:  
+**MacOS:**  
 
 Intall the latest release or long term release version of QGis on your computer.  
 
@@ -56,17 +56,17 @@ Go into the Terminal and execute the command “gdalinfo”, it the answer is �
 
  
 
-Linux: 
+**Linux:** 
 
 Please follow the instructions of the QGIS documentation. Make sure to install both QGIS3.16 (qgis) and the QGIS GRASS plugin (qgis-plugin-grass).  
 
  
+**We have used:** 
 
-We have used.... 
 
  
 
-*Executing program* 
+## Executing program
 
 Modications needed to be made to files/folders? -> Erstellung Ordnerstruktur als Empfehlung (Berechnung UHI -> Vorbereitung, Gebaeudedichte, LST, LC, Result) 
 
@@ -76,31 +76,36 @@ How to run the program? -> Erstellung GRASS Gis location (Heidelberg) & Mapset (
 
   
 
-1.     Preparation: 
+### 1.     Preparation 
 
-a.  Fork and clone the repository to your computer 
+* Fork and clone the repository to your computer 
 
-b.  Download the data here (Link zu Heibox). It contains the following files: 
+* Download the data here (Link zu Heibox). It contains the following files: 
 
-stadtteile.shp 
+	* stadtteile.shp 
 
-o   Gebaeude.shp 
+	* Gebaeude.shp 
 
-o   Vorbereitung.sh 
+	* Vorbereitung.sh 
 
-o   Gebaeudedichte.sh 
+	* Gebaeudedichte.sh 
 
-o   LST.sh 
+	* LST.sh 
 
-o   Land_Cover.sh 
+	* Land_Cover.sh 
 
-o   Result.sh 
+	* Result.sh 
 
   
 
-2.     Run the scripts, f.e. via ./Vorbereitung.sh (Attention: On Linux/Mac you need to make the file executable first: $ chmod +x Vorbereitung.sh) 
+### 2.     Run the scripts
 
 a.     Run first script (Vorbereitung.sh in the GRASS GIS Commandline) 
+
+```bash 
+$ chmod +x ./Vorbereitung.sh (only Mac/Linux)
+$ ./Vorbereitung.sh
+```
 
 b.     Run second script (Gebaeudedichte.sh GRASS GIS Commandline) 
 
@@ -108,21 +113,21 @@ c.     Run third script (Land_Cover.sh in the GRASS GIS Commandline)
 
 d.     Run fourth script (LST.sh in the GRASS GIS Commandline) 
 
-e.     Run fifth script (Result.sh) 
+e.     Run fifth script (Result.sh in the normal Commandline) 
 
  
 
-3. Coloring and illustration of the result with QGis 
+### 3. Coloring and illustration of the result with QGis 
 
   
 
-*Help:* 
+## Help 
 
 Common errors: Specify file paths correctly, … 
 
   
 
-*Authors:* 
+## Authors
 Do not hesitate to contact us with questions, cartwheels and comments at:  
 
 Milena Schnitzler, Milena.Schnitzler@stud.uni-heidelberg.de 
@@ -132,6 +137,6 @@ Leila Hagen, Leila.Hagen@stud.uni-heidelberg.de
   
   
 
-Acknowledgments 
+## Acknowledgments 
 
-Dugord, P. A.; Lauf, S.; Schuster, C. & Kleinschmit, B. (2014): “Land use patterns, temperature distribution, and potential heat stress risk–the case study Berlin, Germany”. Computers, Environment and Urban Systems, 48, 86-98. 
+Dugord, P. A.; Lauf, S.; Schuster, C. & Kleinschmit, B. (2014): “Land use patterns, temperature distribution, and potential heat stress risk–the case study Berlin, Germany”. *Computers, Environment and Urban Systems*, 48, 86-98. 
