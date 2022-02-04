@@ -80,11 +80,13 @@ How to run the program? -> Erstellung GRASS Gis location (Heidelberg) & Mapset (
 
 * Fork and clone the repository to your computer 
 
-* Download the data here (Link zu Heibox). It contains the following files: 
+* Download the [data](https://heibox.uni-heidelberg.de/d/bc815a4d7cdb4a23bc25/). It contains the following files: 
 
 	* stadtteile.shp 
 
 	* Gebaeude.shp 
+
+	* Klassen_Gebaeudedichte.txt
 
 	* Vorbereitung.sh 
 
